@@ -1,80 +1,115 @@
-<!-- 暗黑/亮色自适应 SVG 头图 -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yourname/MetisOS/main/docs/banner_dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yourname/MetisOS/main/docs/banner_light.svg">
-  <img alt="MetisOS Hero" src="https://raw.githubusercontent.com/yourname/MetisOS/main/docs/banner_light.svg" width="100%">
-</picture>
+<!-- 顶栏渐变通知 -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TODO:yourname/TODO:MetisOS/main/docs/banner_dark.svg">
+    <img alt="MetisOS Hero" src="https://raw.githubusercontent.com/TODO:yourname/TODO:MetisOS/main/docs/banner_light.svg" width="92%">
+  </picture>
+</div>
 
-<!-- 动态徽章墙 -->
+<!-- 动态打字 -->
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00ADD8FF&center=true&vCenter=true&width=680&height=35&lines=The+Future+is+Modular.;MetisOS+%7C+Rust-made+Kernel;Zero→One→∞" alt="Typing SVG">
+  </a>
+</div>
+
+<!-- 徽章墙 -->
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=2500&pause=1000&color=00ADD8&center=true&vCenter=true&width=600&height=25&lines=The+Future+is+Modular.;MetisOS+%7C+Rust-made+Kernel;Zero→One→∞)](https://git.io/typing-svg)
-
-[![GitHub release](https://img.shields.io/github/v/release/yourname/MetisOS?style=for-the-badge&logo=github&color=00ADD8&logoColor=white)](https://github.com/yourname/MetisOS/releases)
-[![LoC](https://tokei.rs/b1/github/yourname/MetisOS?category=lines)](https://github.com/yourname/MetisOS)
-[![Discord](https://img.shields.io/discord/123456789?style=for-the-badge&logo=discord&logoColor=white&color=7289da)](https://discord.gg/metisos)
-[![License](https://img.shields.io/github/license/yourname/MetisOS?style=for-the-badge&color=orange&logo=open-source-initiative&logoColor=white)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/TODO:yourname/TODO:MetisOS?style=flat-square&logo=github&color=00ADD8&logoColor=white)][release]
+[![CI](https://img.shields.io/github/actions/workflow/status/TODO:yourname/TODO:MetisOS/ci.yml?branch=main&label=CI&style=flat-square)][actions]
+[![LoC](https://img.shields.io/tokei/lines/github/TODO:yourname/TODO:MetisOS?style=flat-square&color=ff7b72)][repo]
+[![License](https://img.shields.io/github/license/TODO:yourname/TODO:MetisOS?style=flat-square&color=orange)][license]
+[![Discord](https://img.shields.io/discord/TODO:invite_code?style=flat-square&logo=discord&logoColor=white&color=7289da)][discord]
 
 </div>
 
-<!-- 3D 卡片折叠式特性 -->
-<details open>
-<summary><h2>⚙️ Core Pillars</h2></summary>
-
-| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f680.svg" width="24"> Performance | <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f512.svg" width="24"> Security | <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f310.svg" width="24"> Portability |
-| :--- | :--- | :--- |
-| <ul><li>Lock-free scheduler</li><li>1 μs context switch</li><li>SMP > 128 cores</li></ul> | <ul><li>100 % Safe Rust</li><li>MPK + CFI</li><li>Verified drivers</li></ul> | <ul><li>x86_64 / RISC-V / ARMv8</li><li>UEFI + BIOS</li><li>Flat & ELF</li></ul> |
-
-</details>
-
-<!-- 实时统计 & 贡献图 -->
+<!-- 毛玻璃特性卡 -->
 <div align="center">
+<table>
+  <tr>
+    <td>
+      <div style="backdrop-filter:blur(12px);border:1px solid #ffffff20;border-radius:14px;padding:18px 22px;min-width:220px;">
 
-| ![Metrics](https://metrics.lecoq.io/yourname?template=classic&config.timezone=Asia%2FShanghai&base.header=0&base.activity=0&base.repositories=0&base.metadata=0&languages=1&languages.limit=8&languages.colors=github&languages.threshold=0%25&config.display=relative) | ![GitHub stats](https://github-readme-stats.vercel.app/api/pin/?username=yourname&repo=MetisOS&theme=dark&hide_border=true&bg_color=00000000) |
-|:-:|:-:|
-| *Language* | *MetisOS Overview* |
+**🚀 Performance**  
+- Lock-free scheduler  
+- 1 μs context switch  
+- Scales > 128 cores  
 
+      </div>
+    </td>
+    <td>
+      <div style="backdrop-filter:blur(12px);border:1px solid #ffffff20;border-radius:14px;padding:18px 22px;min-width:220px;">
+
+**🔒 Security**  
+- 100 % Safe Rust  
+- MPK + CFI  
+- Formally-verified drivers  
+
+      </div>
+    </td>
+    <td>
+      <div style="backdrop-filter:blur(12px);border:1px solid #ffffff20;border-radius:14px;padding:18px 22px;min-width:220px;">
+
+**🌐 Portability**  
+- x86_64 / RISC-V / ARMv8  
+- UEFI + legacy BIOS  
+- Flat & ELF loader  
+
+      </div>
+    </td>
+  </tr>
+</table>
 </div>
 
-<!-- 一键命令悬浮按钮 -->
+<!-- Demo GIF -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TODO:yourname/TODO:MetisOS/main/docs/demo.gif" width="76%" alt="MetisOS Demo">
+</p>
+
+<!-- 一键闪电体验 -->
 <div align="center">
 
 # 30 秒闪电体验
 curl -sSL https://get.metis-os.org | bash
+<button onclick="navigator.clipboard.writeText('curl -sSL https://get.metis-os.org | bash')">
 </div>
-<!-- 折叠式安装流程 -->
+<!-- 折叠式安装 -->
 <details>
 <summary><h2>🔧 Build from Source</h2></summary>
 表格
 复制
 Step	Command
-0. Prerequisites	cargo install cargo-binutils just
-1. Clone	git clone https://github.com/yourname/MetisOS && cd MetisOS
-2. Toolchain	just toolchain
-3. Run in QEMU	just qemu --release
-4. Flash to HW	just flash /dev/sdX
+0. 依赖	cargo install cargo-binutils just
+1. 克隆	git clone https://github.com/TODO:yourname/TODO:MetisOS.git && cd MetisOS
+2. 工具链	just toolchain
+3. QEMU	just qemu --release
+4. 真机	just flash /dev/sdX
 </details>
-<!-- 动效路线图 (Lottie) -->
+<!-- 视差路线图 -->
 <details>
 <summary><h2>🗺️ Roadmap</h2></summary>
 <div align="center">
-  <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_kxsd2ytq.json" background="transparent" speed="1" style="width: 600px; height: 200px;" loop autoplay></lottie-player>
-</div>
-表格
-复制
+  <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_kxsd2ytq.json" background="transparent" speed="1" style="width:640px;height:200px" loop autoplay></lottie-player>
+</div> 
 Phase	Milestone	ETA
 0x01	Memory-safe TCP/IP	2024 Q3
 0x02	GPU-accelerated GUI	2024 Q4
 0x03	eBPF runtime	2025 Q1
 </details>
-<!-- 交互式贡献者墙 -->
+<!-- 贡献者 -->
 <details>
 <summary><h2>👥 Contributors</h2></summary>
-<div align="center">
-https://github.com/yourname/MetisOS/graphs/contributors
-</div>
+<p align="center">
+  <a href="https://github.com/TODO:yourname/TODO:MetisOS/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=TODO:yourname/TODO:MetisOS" alt="Contributors">
+  </a>
+</p>
 </details>
-<!-- 尾部版权 -->
+<!-- 波浪底栏 -->
 <div align="center">
-https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&text=MetisOS%20Team&fontSize=20
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=90&section=footer&text=MetisOS%20Team&fontSize=20" alt="footer">
 </div>
+<!-- 超链接别名 -->
+<!-- Lottie Player 仅用于 README -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
