@@ -1,75 +1,82 @@
-<!-- 顶部头图 -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/yourname/MetisOS/main/docs/banner.png" width="85%" alt="MetisOS Banner"/>
-</p>
+<!-- 暗黑/亮色自适应 SVG 头图 -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yourname/MetisOS/main/docs/banner_dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yourname/MetisOS/main/docs/banner_light.svg">
+  <img alt="MetisOS Hero" src="https://raw.githubusercontent.com/yourname/MetisOS/main/docs/banner_light.svg" width="100%">
+</picture>
 
-<!-- 徽章区 -->
-<p align="center">
-  <a href="https://github.com/yourname/MetisOS/releases"><img src="https://img.shields.io/github/v/release/yourname/MetisOS?style=flat-square&logo=github&color=00add8"/></a>
-  <a href="https://github.com/yourname/MetisOS/blob/main/LICENSE"><img src="https://img.shields.io/github/license/yourname/MetisOS?style=flat-square"/></a>
-  <a href="https://github.com/yourname/MetisOS/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/yourname/MetisOS/ci.yml?branch=main&label=CI&style=flat-square"/></a>
-  <a href="https://discord.gg/yourlink"><img src="https://img.shields.io/discord/123456789?style=flat-square&logo=discord&label=chat"/></a>
-</p>
+<!-- 动态徽章墙 -->
+<div align="center">
 
-<p align="center">
-  <strong>MetisOS</strong> — 面向未来的极简、模块化操作系统内核。<br/>
-  用 Rust 书写，兼容 x86_64 & RISC-V，<br/>
-  专为「研究 + 教育 + 极客」而生。
-</p>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=2500&pause=1000&color=00ADD8&center=true&vCenter=true&width=600&height=25&lines=The+Future+is+Modular.;MetisOS+%7C+Rust-made+Kernel;Zero→One→∞)](https://git.io/typing-svg)
 
-<!-- 一键按钮 -->
-<p align="center">
-  <a href="#-quick-start">
-    <img src="https://img.shields.io/badge/-快速开始-00add8?style=for-the-badge" alt="Quick Start"/>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/yourname/MetisOS/releases/latest">
-    <img src="https://img.shields.io/badge/-下载镜像-orange?style=for-the-badge" alt="Download"/>
-  </a>
-</p>
+[![GitHub release](https://img.shields.io/github/v/release/yourname/MetisOS?style=for-the-badge&logo=github&color=00ADD8&logoColor=white)](https://github.com/yourname/MetisOS/releases)
+[![LoC](https://tokei.rs/b1/github/yourname/MetisOS?category=lines)](https://github.com/yourname/MetisOS)
+[![Discord](https://img.shields.io/discord/123456789?style=for-the-badge&logo=discord&logoColor=white&color=7289da)](https://discord.gg/metisos)
+[![License](https://img.shields.io/github/license/yourname/MetisOS?style=for-the-badge&color=orange&logo=open-source-initiative&logoColor=white)](LICENSE)
 
----
+</div>
 
-## ✨ 核心特性
-<table width="100%">
-<tr>
-<td width="33%">
+<!-- 3D 卡片折叠式特性 -->
+<details open>
+<summary><h2>⚙️ Core Pillars</h2></summary>
 
-### 🏗️ 模块化
-- 微内核架构
-- 用户态驱动
-- 动态加载模块
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f680.svg" width="24"> Performance | <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f512.svg" width="24"> Security | <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f310.svg" width="24"> Portability |
+| :--- | :--- | :--- |
+| <ul><li>Lock-free scheduler</li><li>1 μs context switch</li><li>SMP > 128 cores</li></ul> | <ul><li>100 % Safe Rust</li><li>MPK + CFI</li><li>Verified drivers</li></ul> | <ul><li>x86_64 / RISC-V / ARMv8</li><li>UEFI + BIOS</li><li>Flat & ELF</li></ul> |
 
-</td>
-<td width="33%">
+</details>
 
-### ⚡ 高性能
-- 抢占式调度
-- 零拷贝 I/O
-- SMP 多核支持
+<!-- 实时统计 & 贡献图 -->
+<div align="center">
 
-</td>
-<td width="33%">
+| ![Metrics](https://metrics.lecoq.io/yourname?template=classic&config.timezone=Asia%2FShanghai&base.header=0&base.activity=0&base.repositories=0&base.metadata=0&languages=1&languages.limit=8&languages.colors=github&languages.threshold=0%25&config.display=relative) | ![GitHub stats](https://github-readme-stats.vercel.app/api/pin/?username=yourname&repo=MetisOS&theme=dark&hide_border=true&bg_color=00000000) |
+|:-:|:-:|
+| *Language* | *MetisOS Overview* |
 
-### 🔒 内存安全
-- 100% Safe Rust
-- 无悬垂指针
-- 地址空间隔离
+</div>
 
-</td>
-</tr>
-</table>
-
-<!-- 动图/截图 -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/yourname/MetisOS/main/docs/demo.gif" width="70%" alt="MetisOS Demo"/>
-</p>
-
-## 🚀 Quick Start
+<!-- 一键命令悬浮按钮 -->
+<div align="center">
 
 ```bash
-# 1. 克隆源码
-git clone https://github.com/yourname/MetisOS.git && cd MetisOS
-
-# 2. 一键运行（QEMU）
-make run
+# 30 秒闪电体验
+curl -sSL https://get.metis-os.org | bash
+</div>
+<!-- 折叠式安装流程 -->
+<details>
+<summary><h2>🔧 Build from Source</h2></summary>
+表格
+复制
+Step	Command
+0. Prerequisites	cargo install cargo-binutils just
+1. Clone	git clone https://github.com/yourname/MetisOS && cd MetisOS
+2. Toolchain	just toolchain
+3. Run in QEMU	just qemu --release
+4. Flash to HW	just flash /dev/sdX
+</details>
+<!-- 动效路线图 (Lottie) -->
+<details>
+<summary><h2>🗺️ Roadmap</h2></summary>
+<div align="center">
+  <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_kxsd2ytq.json" background="transparent" speed="1" style="width: 600px; height: 200px;" loop autoplay></lottie-player>
+</div>
+表格
+复制
+Phase	Milestone	ETA
+0x01	Memory-safe TCP/IP	2024 Q3
+0x02	GPU-accelerated GUI	2024 Q4
+0x03	eBPF runtime	2025 Q1
+</details>
+<!-- 交互式贡献者墙 -->
+<details>
+<summary><h2>👥 Contributors</h2></summary>
+<div align="center">
+https://github.com/yourname/MetisOS/graphs/contributors
+</div>
+</details>
+<!-- 尾部版权 -->
+<div align="center">
+https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&text=MetisOS%20Team&fontSize=20
+</div>
+```
