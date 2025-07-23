@@ -39,7 +39,6 @@
 <!-- 一键命令悬浮按钮 -->
 <div align="center">
 
-```bash
 # 30 秒闪电体验
 curl -sSL https://get.metis-os.org | bash
 </div>
@@ -79,4 +78,3 @@ https://github.com/yourname/MetisOS/graphs/contributors
 <div align="center">
 https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&text=MetisOS%20Team&fontSize=20
 </div>
-```
